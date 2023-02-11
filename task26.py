@@ -2,9 +2,9 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
-def numOfSqrt(x, y):
+def exponentiation(x, y):
     if y == 1:
         return x
-    return numOfSqrt(x, y - 1) * x
+    return exponentiation(x, y - 1) * x
 
-print(numOfSqrt(int(input("Введите А: ")),int(input("Введите B: "))))
+print(exponentiation(int(input("Введите А: ")),int(input("Введите B: "))))
